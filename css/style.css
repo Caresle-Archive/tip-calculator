@@ -1,3 +1,189 @@
+.text--big-1 {
+  font-size: 2rem;
+}
+
+.text--big-2 {
+  font-size: 3rem;
+}
+
+.text--big-3 {
+  font-size: 4rem;
+}
+
+.text--big-4 {
+  font-size: 5rem;
+}
+
+.text--opacity-1 {
+  opacity: 1;
+}
+
+.text--opacity-2 {
+  opacity: 0.5;
+}
+
+.text--primary {
+  color: #26c0ab;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--white {
+  color: white;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
+.text--v-rotate {
+  transform: rotate(-90deg);
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.d-flex, .flex-justify-end, .flex-end, .flex-justify-center, .flex-align-end, .flex-align-center, .flex-center {
+  display: flex;
+}
+
+.fd-col {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-align-end, .flex-end {
+  align-items: flex-end;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-justify-end, .flex-end {
+  justify-content: flex-end;
+}
+
+/* margin font-size * #/2 */
+.ml-1 {
+  margin-left: 8px;
+}
+
+.ml-2 {
+  margin-left: 16px;
+}
+
+.ml-3 {
+  margin-left: 24px;
+}
+
+.ml-4 {
+  margin-left: 32px;
+}
+
+.mr-1 {
+  margin-right: 8px;
+}
+
+.mr-2 {
+  margin-right: 16px;
+}
+
+.mr-3 {
+  margin-right: 24px;
+}
+
+.mr-4 {
+  margin-right: 32px;
+}
+
+.mt-1 {
+  margin-top: 8px;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.p-1 {
+  padding: 8px;
+}
+
+.p-2 {
+  padding: 16px;
+}
+
+.p-3 {
+  padding: 24px;
+}
+
+.p-4 {
+  padding: 32px;
+}
+
+/* 
+	br = border-radius
+	br-pos-# = # * border-radius size
+*/
+.br-1 {
+  border-radius: 4px;
+}
+
+.br-2 {
+  border-radius: 8px;
+}
+
+.br-top-1 {
+  border-radius: 4px 4px 0 0;
+}
+
+.br-top-2 {
+  border-radius: 8px 8px 0 0;
+}
+
+.br-top-3 {
+  border-radius: 12px 12px 0 0;
+}
+
+.br-top-4 {
+  border-radius: 16px 16px 0 0;
+}
+
+.br-topr-1, .br-right-1 {
+  border-top-right-radius: 4px;
+}
+
+.br-topr-2 {
+  border-top-right-radius: 8px;
+}
+
+.br-topr-3 {
+  border-top-right-radius: 12px;
+}
+
+.br-topr-4 {
+  border-top-right-radius: 16px;
+}
+
+.br-right-1 {
+  border-bottom-right-radius: 4px;
+}
+
 * {
   font-family: "Space Mono", monospace;
   box-sizing: border-box;
@@ -6,6 +192,7 @@
 html, body {
   margin: 0;
   height: 100vh;
+  background-color: #c5e4e7;
 }
 
 #main-container {
@@ -15,6 +202,7 @@ html, body {
 }
 
 #tip-calculator {
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 98px 128px 64px 128px;

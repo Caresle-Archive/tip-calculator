@@ -1,17 +1,9 @@
-// Primary
-$strong-cyan: hsl(172, 67%, 45%);
-
-// Neutral
-$very-dark-cyan: hsl(183, 100%, 15%);
-$dark-grayish-cyan: hsl(186, 14%, 43%);
-$dark-grayish-cyan: hsl(184, 14%, 56%);
-$light-grayish-cyan: hsl(185, 41%, 84%);
-$light-grayish-cyan: hsl(189, 41%, 97%);
-$white: hsl(0, 0%, 100%);
-
-$font-weight-small: 400;
-$font-weight-big: 700;
-$font-size-forms: 24px;
+@use 'variables' as var;
+@use 'text';
+@use 'display';
+@use 'margin';
+@use 'padding';
+@use 'border';
 
 * {
 	font-family: 'Space Mono', monospace;
@@ -21,6 +13,7 @@ $font-size-forms: 24px;
 html, body {
 	margin: 0;
 	height: 100vh;
+	background-color: var.$light-grayish-cyan;
 }
 
 #main-container {
@@ -30,6 +23,7 @@ html, body {
 }
 
 #tip-calculator {
+	background-color: var.$white;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 98px 128px 64px 128px;

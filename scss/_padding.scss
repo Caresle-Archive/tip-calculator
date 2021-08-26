@@ -1,0 +1,22 @@
+@use 'variables' as var;
+
+$size-1: var.$font-size * .5;
+$size-2: var.$font-size * 1;
+$size-3: var.$font-size * 1.5;
+$size-4: var.$font-size * 2;
+
+.p-1 {
+	padding: $size-1;
+}
+
+.p-2 {
+	padding: $size-2;
+}
+
+.p-3 {
+	padding: $size-3;
+}
+
+.p-4 {
+	padding: $size-4;
+}
