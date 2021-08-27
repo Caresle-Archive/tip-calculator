@@ -7,6 +7,10 @@ $size-2: var.$font-size * 1;
 $size-3: var.$font-size * 1.5;
 $size-4: var.$font-size * 2;
 
+.m-h-center {
+	margin: 0 auto;
+}
+
 .m-1 {
 	margin: $size-1;
 }

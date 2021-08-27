@@ -22,15 +22,18 @@
   </head>
   <body>
     <div id="main-container">
-      <img src="./images/logo.svg" alt="logo" />
-      <main id="tip-calculator">
+      <img src="./images/logo.svg" alt="logo" class="flex-s-center"/>
+      <main id="tip-calculator" class="br-top-4 p-1">
         <div>
-          <h3>Bill</h3>
-          <input type="number" name="" id="" />
+          <h3 class="text--gray">Bill</h3>
+          <div>
+            <img src="./images/icon-dollar.svg" alt="">
+            <input type="number" name="" id="" />
+          </div>
         </div>
 
         <div>
-          <h3>Select Tip %</h3>
+          <h3 class="text--gray">Select Tip %</h3>
           <div class="grid grid-col-2">
             <button class="m-1 btn btn-primary-dark">5%</button>
             <button class="m-1 btn btn-primary-dark">10%</button>
@@ -42,8 +45,11 @@
         </div>
 
         <div>
-          Number of People
-          <input type="number" name="" id="" />
+          <span class="text--gray">Number of People</span>
+          <div>
+            <img src="./images/icon-person.svg" alt="">
+            <input type="number" name="" id="" />
+          </div>
         </div>
 
         <div>
@@ -63,7 +69,7 @@
             <p></p>
           </div>
 
-          <button>Reset</button>
+          <button class="btn btn-primary text--primary-dark text--uppercase width-80">Reset</button>
         </div>
       </main>
     </div>

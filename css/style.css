@@ -58,7 +58,7 @@
   text-transform: uppercase;
 }
 
-.d-flex, .flex-justify-end, .flex-end, .flex-justify-center, .flex-align-end, .flex-align-center, .flex-center {
+.d-flex, .flex-justify-end, .flex-end, .flex-justify-center, .flex-align-end, .flex-align-center, .flex-s-center, .flex-center {
   display: flex;
 }
 
@@ -69,6 +69,11 @@
 .flex-center {
   justify-content: center;
   align-items: center;
+}
+
+.flex-s-center {
+  justify-self: center;
+  align-self: center;
 }
 
 .flex-align-center {
@@ -99,7 +104,27 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.width-100 {
+  width: 100%;
+}
+
+.width-80 {
+  width: 80%;
+}
+
+.width-60 {
+  width: 60%;
+}
+
+.width-40 {
+  width: 40%;
+}
+
 /* margin font-size * #/2 */
+.m-h-center {
+  margin: 0 auto;
+}
+
 .m-1 {
   margin: 8px;
 }
@@ -180,6 +205,14 @@
   border-radius: 8px;
 }
 
+.br-3 {
+  border-radius: 12px;
+}
+
+.br-4 {
+  border-radius: 16px;
+}
+
 .br-top-1 {
   border-radius: 4px 4px 0 0;
 }
@@ -249,19 +282,20 @@ html, body {
   margin: 0;
   height: 100vh;
   font-size: 16px;
+  background-color: #c5e4e7;
 }
 
 #main-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 15vh 85vh;
+  grid-template-rows: 96px 642px;
 }
 
 #tip-calculator {
   background-color: white;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 98px 192px 32px 128px;
+  grid-template-rows: 98px 256px 32px 256px;
 }
 
 /*# sourceMappingURL=style.css.map */

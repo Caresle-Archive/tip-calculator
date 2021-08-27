@@ -12,6 +12,12 @@
 	align-items: center;
 }
 
+.flex-s-center {
+	@extend .d-flex;
+	justify-self: center;
+	align-self: center;
+}
+
 .flex-align-center {
 	@extend .d-flex;
 	align-items: center;
@@ -47,4 +53,20 @@
 
 .grid-col-2 {
 	grid-template-columns: repeat(2, 1fr);
+}
+
+.width-100 {
+	width: 100%;
+}
+
+.width-80 {
+	width: 80%;
+}
+
+.width-60 {
+	width: 60%;
+}
+
+.width-40 {
+	width: 40%;
 }
