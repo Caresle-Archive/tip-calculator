@@ -36,3 +36,15 @@
 	@extend .flex-align-end;
 	@extend .flex-justify-end;
 }
+
+.grid {
+	display: grid;
+}
+
+.grid-col-1 {
+	grid-template-columns: 1fr;
+}
+
+.grid-col-2 {
+	grid-template-columns: repeat(2, 1fr);
+}

@@ -9,8 +9,13 @@ $light-grayish-cyan-2: hsl(189, 41%, 97%);
 $white: hsl(0, 0%, 100%);
 // definition
 $primary: $strong-cyan;
+$primary-dark: $very-dark-cyan;
+$gray: $light-grayish-cyan;
+$gray-dark: $dark-grayish-cyan-2;
 
 $text-primary: $primary;
+$text-primary-dark: $primary-dark;
+$text-gray: $gray-dark;
 
 $font-size: 16px;
 $font-weight-small: 400;

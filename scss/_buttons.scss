@@ -1,0 +1,25 @@
+@use 'variables' as var;
+
+.btn  {
+	background-color: var.$white;
+	border: 1px solid var.$primary;
+	height: 48px;
+	border-radius: var.$border-radius;
+	font-weight: var.$font-weight-big;
+	font-size: 1.5rem;
+}
+
+.btn-primary {
+	background-color: var.$primary;
+}
+
+.btn-primary-dark {
+	background-color: var.$primary-dark;
+	border: 1px solid var.$primary-dark;
+	color: var.$white;
+}
+
+.btn-gray {
+	background-color: var.$gray;
+	border: 1px solid var.$gray;
+}

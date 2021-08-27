@@ -4,6 +4,7 @@
 @use 'margin';
 @use 'padding';
 @use 'border';
+@use 'buttons';
 
 * {
 	font-family: 'Space Mono', monospace;
@@ -13,18 +14,19 @@
 html, body {
 	margin: 0;
 	height: 100vh;
-	background-color: var.$light-grayish-cyan;
+	font-size: var.$font-size;
+	// background-color: var.$light-grayish-cyan;
 }
 
 #main-container {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 54px 420px;
+	grid-template-rows: 15vh 85vh;
 }
 
 #tip-calculator {
 	background-color: var.$white;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 98px 128px 64px 128px;
+	grid-template-rows: 98px 192px 32px 128px;
 }
