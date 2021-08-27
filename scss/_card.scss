@@ -1,0 +1,5 @@
+@use 'variables' as var;
+
+.card-primary-dark {
+	background-color: var.$primary-dark;
+}

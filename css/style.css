@@ -1,3 +1,39 @@
+.text--weight-small {
+  font-weight: 400;
+}
+
+.text--weight-big {
+  font-weight: 700;
+}
+
+.text--small-1 {
+  font-size: 0.25rem;
+}
+
+.text--small-2 {
+  font-size: 0.5rem;
+}
+
+.text--small-3 {
+  font-size: 0.75rem;
+}
+
+.text--small-4 {
+  font-size: 1rem;
+}
+
+.text--medium-1 {
+  font-size: 1.25rem;
+}
+
+.text--medium-2 {
+  font-size: 1.5rem;
+}
+
+.text--medium-3 {
+  font-size: 1.75rem;
+}
+
 .text--big-1 {
   font-size: 2rem;
 }
@@ -58,7 +94,7 @@
   text-transform: uppercase;
 }
 
-.d-flex, .flex-justify-end, .flex-end, .flex-justify-center, .flex-align-end, .flex-align-center, .flex-s-center, .flex-center {
+.d-flex, .flex-justify-around, .flex-justify-end, .flex-end, .flex-justify-center, .flex-align-end, .flex-align-center, .flex-s-center, .flex-center {
   display: flex;
 }
 
@@ -90,6 +126,10 @@
 
 .flex-justify-end, .flex-end {
   justify-content: flex-end;
+}
+
+.flex-justify-around {
+  justify-content: space-around;
 }
 
 .grid {
@@ -273,6 +313,10 @@
   border: 1px solid #c5e4e7;
 }
 
+.card-primary-dark {
+  background-color: #00494d;
+}
+
 * {
   font-family: "Space Mono", monospace;
   box-sizing: border-box;
@@ -288,14 +332,18 @@ html, body {
 #main-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 96px 642px;
+  grid-template-rows: 96px 674px;
 }
 
 #tip-calculator {
   background-color: white;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 98px 256px 32px 256px;
+  grid-template-rows: 98px 256px 64px 256px;
+}
+
+#dollar {
+  color: #00494d;
 }
 
 /*# sourceMappingURL=style.css.map */

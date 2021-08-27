@@ -22,12 +22,12 @@
   </head>
   <body>
     <div id="main-container">
-      <img src="./images/logo.svg" alt="logo" class="flex-s-center"/>
+      <img src="./images/logo.svg" alt="logo" class="flex-s-center" />
       <main id="tip-calculator" class="br-top-4 p-1">
         <div>
           <h3 class="text--gray">Bill</h3>
           <div>
-            <img src="./images/icon-dollar.svg" alt="">
+            <img src="./images/icon-dollar.svg" alt="" />
             <input type="number" name="" id="" />
           </div>
         </div>
@@ -47,29 +47,44 @@
         <div>
           <span class="text--gray">Number of People</span>
           <div>
-            <img src="./images/icon-person.svg" alt="">
+            <img src="./images/icon-person.svg" alt="" />
             <input type="number" name="" id="" />
           </div>
         </div>
 
-        <div>
-          <div>
-            <p>
+        <div class="card-primary-dark br-3 p-1">
+          <div class="flex-align-center flex-justify-around">
+            <p class="text--white d-flex fd-col text--weight-big">
               Tip Amount
-              <span>/ person</span>
+              <span class="text--gray text--weight-small">/ person</span>
             </p>
-            <p></p>
+            <p class="text--primary text--weight-big text--medium-2">
+              <img src="./images/icon-dollar.svg" id="dollar" alt="">
+              0
+            </p>
           </div>
 
-          <div>
-            <p>
+          <div class="flex-align-center flex-justify-around">
+            <p class="text--white d-flex fd-col text--weight-big">
               Total
-              <span>/ person</span>
+              <span class="text--gray text--weight-small">/ person</span>
             </p>
-            <p></p>
+            <p class="text--primary text--weight-big text--medium-2">
+              <img src="./images/icon-dollar.svg" alt="">
+              0
+            </p>
           </div>
-
-          <button class="btn btn-primary text--primary-dark text--uppercase width-80">Reset</button>
+          <div class="flex-justify-center">
+            <button
+              class="
+                btn btn-primary
+                text--primary-dark text--uppercase
+                width-80
+              "
+            >
+              Reset
+            </button>
+          </div>
         </div>
       </main>
     </div>
