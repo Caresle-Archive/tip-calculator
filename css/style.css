@@ -302,6 +302,10 @@
   font-size: 1.5rem;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 .btn-primary {
   background-color: #26c0ab;
 }
@@ -323,8 +327,11 @@
 
 input {
   font-size: 24px;
-  background-color: #f4fafa;
+  background-color: #c5e4e7;
   border: none;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 4px;
 }
 
 input[type=number]::-webkit-outer-spin-button,
@@ -351,10 +358,11 @@ html, body {
 #main-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 96px 674px;
+  grid-template-rows: 96px 736px;
 }
 
 #tip-calculator {
+  border-radius: 16px 16px 0 0;
   background-color: white;
   display: grid;
   grid-template-columns: 1fr;
@@ -363,6 +371,56 @@ html, body {
 
 #dollar {
   color: #00494d;
+}
+
+@media only screen and (min-width: 800px) {
+  #main-container {
+    width: 600px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: 96px 500px;
+    grid-template-areas: "logo logo" "card card";
+  }
+
+  #logo {
+    grid-area: logo;
+  }
+
+  #tip-calculator {
+    border-radius: 16px;
+    grid-area: card;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 144px 256px 80px;
+    grid-template-areas: "bill value" "select value" "number-p value";
+  }
+
+  #bill {
+    grid-area: bill;
+  }
+
+  #select {
+    grid-area: select;
+  }
+
+  #number-p {
+    grid-area: number-p;
+  }
+
+  #value-card {
+    grid-area: value;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main-container {
+    width: 900px;
+    grid-template-columns: repeat(2, 450px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

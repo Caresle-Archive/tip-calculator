@@ -2,8 +2,11 @@
 
 input {
 	font-size: var.$font-size-forms;
-	background-color: var.$light-grayish-cyan-2;
+	background-color: var.$light-grayish-cyan;
 	border: none;
+	font-weight: var.$font-weight-big;
+	border-radius: 4px;
+	padding: 4px;
 }
 
 input[type="number"]::-webkit-outer-spin-button,

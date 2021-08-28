@@ -9,6 +9,10 @@
 	font-size: 1.5rem;
 }
 
+.btn:hover {
+	cursor: pointer;
+}
+
 .btn-primary {
 	background-color: var.$primary;
 }

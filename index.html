@@ -22,17 +22,17 @@
   </head>
   <body>
     <div id="main-container">
-      <img src="./images/logo.svg" alt="logo" class="flex-s-center" />
-      <main id="tip-calculator" class="br-top-4 p-1">
-        <div>
+      <img id="logo" src="./images/logo.svg" alt="logo" class="flex-s-center" />
+      <main id="tip-calculator" class="p-1">
+        <div id="bill">
           <h3 class="text--gray">Bill</h3>
-          <div>
+          <div class="flex-align-center">
             <img src="./images/icon-dollar.svg" alt="" />
             <input class="text--primary-dark text--right" placeholder="0" type="number" name="" id="" />
           </div>
         </div>
 
-        <div>
+        <div id="select">
           <h3 class="text--gray">Select Tip %</h3>
           <div class="grid grid-col-2">
             <button class="m-1 btn btn-primary-dark">5%</button>
@@ -44,15 +44,15 @@
           </div>
         </div>
 
-        <div>
+        <div id="number-p">
           <span class="text--gray">Number of People</span>
-          <div>
+          <div class="flex-align-center">
             <img src="./images/icon-person.svg" alt="" />
             <input class="text--primary-dark text--right" type="number" name="" id="" placeholder="0"/>
           </div>
         </div>
 
-        <div class="card-primary-dark br-3 p-1">
+        <div class="card-primary-dark br-3 p-1" id="value-card">
           <div class="flex-align-center flex-justify-around">
             <p class="text--white d-flex fd-col text--weight-big">
               Tip Amount
@@ -88,10 +88,5 @@
         </div>
       </main>
     </div>
-
-    <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   </body>
 </html>

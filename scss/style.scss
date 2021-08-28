@@ -24,10 +24,11 @@ html, body {
 #main-container {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 96px 674px;
+	grid-template-rows: 96px 736px;
 }
 
 #tip-calculator {
+	border-radius: var.$border-radius * 4 var.$border-radius * 4 0 0;
 	background-color: var.$white;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -36,4 +37,55 @@ html, body {
 
 #dollar {
 	color: var.$primary-dark;
+}
+
+@media only screen and (min-width: 800px) {
+	#main-container {
+		width: 600px;
+		margin: 0 auto;
+		grid-template-columns: repeat(2, 300px);
+		grid-template-rows: 96px 500px;
+		grid-template-areas: "logo logo" "card card";
+	}
+
+	#logo {
+		grid-area: logo;
+	}
+
+	#tip-calculator {
+		border-radius: var.$border-radius * 4;
+		grid-area: card;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 144px 256px 80px;
+		grid-template-areas: "bill value" "select value" "number-p value";
+	}
+
+	#bill {
+		grid-area: bill;
+	}
+
+	#select {
+		grid-area: select;
+	}
+
+	#number-p {
+		grid-area: number-p;
+	}
+
+	#value-card {
+		grid-area: value;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#main-container {
+		width: 900px;
+		grid-template-columns: repeat(2, 450px);
+	}
 }
