@@ -7,6 +7,7 @@
 @use 'buttons';
 
 @use 'card';
+@use 'input';
 
 * {
 	font-family: 'Space Mono', monospace;
@@ -30,7 +31,7 @@ html, body {
 	background-color: var.$white;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 98px 256px 64px 256px;
+	grid-template-rows: 144px 256px 80px 256px;
 }
 
 #dollar {
