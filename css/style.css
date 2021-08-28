@@ -308,6 +308,17 @@
 
 .btn-primary {
   background-color: #26c0ab;
+  color: #00494d;
+}
+
+.btn-primary:disabled {
+  background-color: #00494d;
+}
+
+.btn-primary-outline {
+  background-color: white;
+  border: 1px solid #26c0ab;
+  color: #00494d;
 }
 
 .btn-primary-dark {
@@ -319,6 +330,7 @@
 .btn-gray {
   background-color: #c5e4e7;
   border: 1px solid #c5e4e7;
+  color: #7f9c9f;
 }
 
 .card-primary-dark {
@@ -332,15 +344,6 @@ input {
   font-weight: 700;
   border-radius: 4px;
   padding: 4px;
-}
-
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
 }
 
 * {
