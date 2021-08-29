@@ -1,4 +1,4 @@
-# Frontend Mentor - 
+# Frontend Mentor - Tip calculator app solution
 
 Esta es una solución para el [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Los retos de Frontend Mentor pueden ayudarte a mejorar tus habilidades por medio de crear proyectos reales.
 
@@ -30,8 +30,8 @@ El usuario deberá ser capaz de:
 ![](./docs/desktop.png)
 
 ### Links
-- URL para la solución: [Solution page]()
-- URL para probar el sitio: [Github pages]()
+- URL para la solución: [Solution page](https://www.frontendmentor.io/solutions/sass-rnz0exoc5)
+- URL para probar el sitio: [Github pages](https://caresle.github.io/tip-calculator/)
 
 ## Mi proceso
 

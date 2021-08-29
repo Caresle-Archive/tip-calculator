@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution page]()
-- Live Site URL: [Github pages]()
+- Solution URL: [Solution page](https://www.frontendmentor.io/solutions/sass-rnz0exoc5)
+- Live Site URL: [Github pages](https://caresle.github.io/tip-calculator/)
 
 ## My process
 
