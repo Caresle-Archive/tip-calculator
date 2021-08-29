@@ -74,6 +74,10 @@
   color: #7f9c9f;
 }
 
+.text--danger {
+  color: red;
+}
+
 .text--primary-dark {
   color: #00494d;
 }
@@ -351,6 +355,10 @@
   border: 1px solid #c5e4e7;
   color: #00494d;
   font-weight: 700;
+}
+
+.input-danger {
+  border: 1px solid red;
 }
 
 * {

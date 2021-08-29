@@ -9,24 +9,26 @@ const tipPerson = document.getElementById('tip-person-text')
 const resetButton = document.getElementById('reset-button')
 const buttonsBill = document.querySelectorAll('.btn-bill')
 
+const errorMessage = document.getElementById('error-message')
+errorMessage.innerHTML = ''
 let btnActive = ''
 
-const addBtnStyle = (btn, addS, remS) => {
-	btn.classList.remove(remS)
-	btn.classList.add(addS)
+const addStyle = (ele, addS, remS) => {
+	ele.classList.remove(remS)
+	ele.classList.add(addS)
 }
 
 // Add the style before click the button
 const removeBtnActive = (btn, remS, addS) => {
 	if (btn !== '') {
-		addBtnStyle(btn, addS, remS)
+		addStyle(btn, addS, remS)
 	}
 }
 
 const clickBillButton = (e) => {
 	const btn = e.target
 	removeBtnActive(btnActive, 'btn-primary', 'btn-primary-dark')
-	addBtnStyle(btn, 'btn-primary', 'btn-primary-dark')
+	addStyle(btn, 'btn-primary', 'btn-primary-dark')
 	btnActive = btn
 	amount()
 }
@@ -55,8 +57,12 @@ const amount = () => {
 	inputPersonValue = setValueToZero(inputPerson.value)
 	inputBtnValue = setValueToZero(inputBtn.value)
 	if (inputPersonValue === 0) {
-		console.log('hey no')
+		inputPerson.classList.add('input-danger')
+		errorMessage.innerHTML = 'can\'t be zero'
 		return
+	} else {
+		inputPerson.classList.remove('input-danger')
+		errorMessage.innerHTML = ''
 	}
 
 	if (inputBtnValue === 0) {
@@ -86,6 +92,11 @@ window.addEventListener('load', () => {
 
 	inputBtn.addEventListener('click', () => {
 		removeBtnActive(btnActive, 'btn-primary', 'btn-primary-dark')
+	})
+
+	resetButton.addEventListener('click', () => {
+		tipTotalPerson.innerHTML = 0
+		tipPerson.innerHTML = 0
 	})
 })
 
