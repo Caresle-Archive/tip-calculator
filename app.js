@@ -48,7 +48,14 @@ const calcTip = (bill, people, tipPercent) => {
 	tipPerson.innerHTML = tipInd.toFixed(2)
 }
 
+const enableResetButton = () => {
+	if (inputPerson.value !== '' && inputBill.value !== '') {
+		resetButton.disabled = false
+	}
+}
+
 const amount = () => {
+	enableResetButton()
 	let inputBillValue = 0
 	let inputPersonValue = 0
 	let inputBtnValue = 0
@@ -77,9 +84,7 @@ const amount = () => {
 }
 
 window.addEventListener('load', () => {
-	if (inputPerson.value !== '' && inputBill.value !== '') {
-		resetButton.disabled = false
-	}
+	enableResetButton()
 
 	for (const button of buttonsBill) {
 		button.addEventListener('click', clickBillButton)
