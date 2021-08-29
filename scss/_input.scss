@@ -1,10 +1,17 @@
 @use 'variables' as var;
 
-input {
+.input {
 	font-size: var.$font-size-forms;
 	background-color: var.$light-grayish-cyan;
 	border: none;
 	font-weight: var.$font-weight-big;
 	border-radius: 4px;
 	padding: 4px;
+}
+
+.input-custom {
+	background-color: var.$gray;
+	border: 1px solid var.$gray;
+	color: var.$text-primary-dark;
+	font-weight: var.$font-weight-big;
 }

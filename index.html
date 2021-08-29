@@ -28,19 +28,20 @@
           <h3 class="text--gray">Bill</h3>
           <div class="flex-align-center">
             <img src="./images/icon-dollar.svg" alt="" />
-            <input id="inputBill" class="text--primary-dark text--right" placeholder="0" type="text" name="" />
+            <input id="inputBill" class="input text--primary-dark text--right" placeholder="0" type="text" name="" />
           </div>
         </div>
 
         <div id="select">
           <h3 class="text--gray">Select Tip %</h3>
           <div class="grid grid-col-2">
-            <button class="m-1 btn btn-primary-dark btn-bill">5%</button>
-            <button class="m-1 btn btn-primary-dark btn-bill">10%</button>
-            <button class="m-1 btn btn-primary-dark btn-bill">25%</button>
-            <button class="m-1 btn btn-primary-dark btn-bill">15%</button>
-            <button class="m-1 btn btn-primary-dark btn-bill">50%</button>
-            <button class="m-1 btn btn-gray btn-bill">Custom</button>
+            <button class="m-1 btn btn-primary-dark btn-bill" value=".05">5%</button>
+            <button class="m-1 btn btn-primary-dark btn-bill" value=".10">10%</button>
+            <button class="m-1 btn btn-primary-dark btn-bill" value=".25">25%</button>
+            <button class="m-1 btn btn-primary-dark btn-bill" value=".15">15%</button>
+            <button class="m-1 btn btn-primary-dark btn-bill" value=".5">50%</button>
+            <!-- <button class="m-1 btn btn-gray btn-bill">Custom</button> -->
+            <input type="text" id="btn-custom" class="m-1 input-custom" placeholder="Custom">
           </div>
         </div>
 
@@ -48,7 +49,7 @@
           <span class="text--gray">Number of People</span>
           <div class="flex-align-center">
             <img src="./images/icon-person.svg" alt="" />
-            <input id="inputPerson" class="text--primary-dark text--right" type="text" name="" placeholder="0"/>
+            <input id="inputPerson" class="input text--primary-dark text--right" type="text" name="" placeholder="0"/>
           </div>
         </div>
 
@@ -60,7 +61,7 @@
             </p>
             <p class="text--primary text--weight-big text--medium-2">
               <img src="./images/icon-dollar.svg" id="dollar" alt="">
-              0
+              <span id="tip-person-text">0</span>
             </p>
           </div>
 
@@ -71,7 +72,7 @@
             </p>
             <p class="text--primary text--weight-big text--medium-2">
               <img src="./images/icon-dollar.svg" alt="">
-              0
+              <span id="tip-total-text">0</span>
             </p>
           </div>
           <div class="flex-justify-center">
